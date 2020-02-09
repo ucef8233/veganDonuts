@@ -12,6 +12,7 @@ sans-serif;
 %container {
   max-width: 990px;
   margin: auto;
+  display: flex;
 }
 
 // utiles
@@ -41,7 +42,6 @@ header {
     .container {
       @extend %container;
       height: 20vh;
-      display: flex;
       justify-content: space-around;
       align-items: center;
 
@@ -81,7 +81,7 @@ header {
 
 main {
   background-image: url(../images/bg-tile.gif);
-
+  padding-bottom: 1rem;
   .main_header {
     text-align: center;
 
@@ -102,7 +102,6 @@ main {
 
   .main_whole {
     @extend %container;
-    display: flex;
 
     p {
       max-width: 40rem;
@@ -128,7 +127,6 @@ main {
 
   .main_event {
     @extend %container;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 
@@ -139,11 +137,14 @@ main {
 }
 
 %section {
-  .icon {
+  h2{
+    color:$sfar;
+  }
+  .main_icon {
     @include image (url(../images/icon-news.png), 3rem, 3rem, 115%, 74%)
   }
 
-  .icon2 {
+  .main_icon2 {
     @include image (url(../images/icon-calendar.png), 3rem, 3rem, 138%, 74%)
   }
 
@@ -163,5 +164,27 @@ main {
     a {
       color: $sfar
     }
+  }
+}
+footer{
+  background-color: $khal;
+  color:$byad;
+  .footer_icon1{
+    @include image(url(../images/icon-recycle.png),3rem,3rem,180%,74%);
+  }
+  .footer_icon2{
+    @include image(url(../images/icon-apple.png),3rem,3rem,180%,34%);
+  }
+  .footer_cases{
+   @extend %container;
+  height: 20vh;
+  align-items: center;
+   justify-content: space-between;
+   .footer_case{
+     margin-left: 3rem;
+     a{
+       color:$limoni;
+     }
+   }
   }
 }
