@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400,700|Gloria+Hallelujah&display=swap");
-header nav .container, main .main_whole, main .main_event {
+header nav .container, main .main_whole, main .main_event, footer .footer_cases {
   max-width: 990px;
-  margin: auto; }
+  margin: auto;
+  display: flex; }
 
 * {
   margin: 0px;
@@ -21,7 +22,6 @@ header {
     background-image: url(../images/bg-tile.gif); }
     header nav .container {
       height: 20vh;
-      display: flex;
       justify-content: space-around;
       align-items: center; }
       header nav .container a {
@@ -64,7 +64,8 @@ header {
       font-size: 0rem; }
 
 main {
-  background-image: url(../images/bg-tile.gif); }
+  background-image: url(../images/bg-tile.gif);
+  padding-bottom: 1rem; }
   main .main_header {
     text-align: center; }
     main .main_header h1 {
@@ -75,25 +76,25 @@ main {
       font-size: 2rem;
       font-weight: 200;
       margin: 0.6rem 0rem; }
-  main .main_whole {
+  main .main_whole p {
+    max-width: 40rem; }
+    main .main_whole p a {
+      color: #e8c04f; }
+  main .main_whole .test {
     display: flex; }
-    main .main_whole p {
-      max-width: 40rem; }
-      main .main_whole p a {
-        color: #e8c04f; }
-    main .main_whole .test {
-      display: flex; }
-      main .main_whole .test img {
-        margin: 0rem 1.5rem; }
+    main .main_whole .test img {
+      margin: 0rem 1.5rem; }
   main .divider {
     display: block;
     margin: 3rem auto; }
   main .main_event {
-    display: flex;
     align-items: center;
     justify-content: space-between; }
 
-main .main_event .main_news .icon {
+main .main_event .main_news h2 {
+  color: #e8c04f; }
+
+main .main_event .main_news .main_icon {
   background-image: url(../images/icon-news.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -103,7 +104,7 @@ main .main_event .main_news .icon {
   right: 74%;
   font-size: 0rem; }
 
-main .main_event .main_news .icon2 {
+main .main_event .main_news .main_icon2 {
   background-image: url(../images/icon-calendar.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -123,3 +124,33 @@ main .main_event .main_news section {
     line-height: 1.6; }
   main .main_event .main_news section a {
     color: #e8c04f; }
+
+footer {
+  background-color: #4b2707;
+  color: #f2f3ee; }
+  footer .footer_icon1 {
+    background-image: url(../images/icon-recycle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 180%;
+    right: 74%;
+    font-size: 0rem; }
+  footer .footer_icon2 {
+    background-image: url(../images/icon-apple.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 180%;
+    right: 34%;
+    font-size: 0rem; }
+  footer .footer_cases {
+    height: 20vh;
+    align-items: center;
+    justify-content: space-between; }
+    footer .footer_cases .footer_case {
+      margin-left: 3rem; }
+      footer .footer_cases .footer_case a {
+        color: #d17f38; }
