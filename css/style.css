@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400,700|Gloria+Hallelujah&display=swap");
+header nav .container, main .main_whole, main .main_event {
+  max-width: 990px;
+  margin: auto; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,7 +11,8 @@
 body {
   font-family: "Fira Sans Extra Condensed", sans-serif; }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Gloria Hallelujah", cursive; }
 
 header {
@@ -15,8 +20,6 @@ header {
   header nav {
     background-image: url(../images/bg-tile.gif); }
     header nav .container {
-      max-width: 1200px;
-      margin: auto;
       height: 20vh;
       display: flex;
       justify-content: space-around;
@@ -31,17 +34,92 @@ header {
         background-image: url("../images/logo.png");
         background-repeat: no-repeat;
         position: absolute;
-        width: 260px;
-        height: 140px;
+        width: 17rem;
+        height: 9rem;
         top: 3%;
-        right: 44%;
+        right: 43%;
         font-size: 0rem; }
     header nav p {
       background-image: url(../images/tiny-donut.png);
       background-repeat: no-repeat;
       position: absolute;
-      width: 20px;
-      height: 20px;
+      width: 1.5rem;
+      height: 1.5rem;
       top: 10%;
-      right: 26.5%;
+      right: 30%;
       font-size: 0rem; }
+  header .image_header {
+    background-color: #e8c04f;
+    text-align: center; }
+    header .image_header img {
+      margin: 1.5rem 0rem; }
+    header .image_header p {
+      background-image: url(../images/fresh-whole-ingredients.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 10rem;
+      height: 12rem;
+      top: 25%;
+      right: 23.5%;
+      font-size: 0rem; }
+
+main {
+  background-image: url(../images/bg-tile.gif); }
+  main .main_header {
+    text-align: center; }
+    main .main_header h1 {
+      color: #d17f38; }
+      main .main_header h1 em {
+        color: #4b2707; }
+    main .main_header p {
+      font-size: 2rem;
+      font-weight: 200;
+      margin: 0.6rem 0rem; }
+  main .main_whole {
+    display: flex; }
+    main .main_whole p {
+      max-width: 40rem; }
+      main .main_whole p a {
+        color: #e8c04f; }
+    main .main_whole .test {
+      display: flex; }
+      main .main_whole .test img {
+        margin: 0rem 1.5rem; }
+  main .divider {
+    display: block;
+    margin: 3rem auto; }
+  main .main_event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+main .main_event .main_news .icon {
+  background-image: url(../images/icon-news.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 115%;
+  right: 74%;
+  font-size: 0rem; }
+
+main .main_event .main_news .icon2 {
+  background-image: url(../images/icon-calendar.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 138%;
+  right: 74%;
+  font-size: 0rem; }
+
+main .main_event .main_news section {
+  margin: 1.5rem 0rem 1.5rem 3rem; }
+  main .main_event .main_news section .date {
+    color: #e8c04f;
+    margin-bottom: 1rem; }
+  main .main_event .main_news section p {
+    margin-bottom: 1rem;
+    line-height: 1.6; }
+  main .main_event .main_news section a {
+    color: #e8c04f; }
