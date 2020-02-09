@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400,700|Gloria+Hallelujah&display=swap');
+@import "scss/image_absolute.scss";
+$byad:#f2f3ee;
+$limoni:#d17f38;
+$sfar: #e8c04f;
+$khal: #4b2707;
+$title_font: 'Gloria Hallelujah', cursive;
+$text_font: 'Fira Sans Extra Condensed', sans-serif;
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: $text_font;
+}
+h1,h2{
+  font-family: $title_font;
+}
+
+
+header {
+  position: relative;
+  nav {
+    background-image: url(../images/bg-tile.gif);
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      height: 20vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $sfar;
+        text-transform: uppercase;
+        &:nth-child(5){
+          color: $khal;
+        }
+      }
+      #img_nav {
+        @include image(url("../images/logo.png"),260px,140px,3%,44%);
+      }
+    }
+    p {
+      @include image(url(../images/tiny-donut.png),20px,20px,10%,26.5%);
+        }
+  }
+}

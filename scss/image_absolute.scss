@@ -1,0 +1,10 @@
+@mixin image($image,$width,$height,$top,$right){
+  background-image: $image;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: $width;
+        height: $height;
+        top: $top;
+        right: $right;
+        font-size: 0rem;
+}
